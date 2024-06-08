@@ -1,0 +1,53 @@
+:root {
+    --primary-text-clr: #FAFAFA;
+    --secondary-text-clr: #F0F3F2;
+    --accent-text-clr: #247f87;
+    --primary-btn-clr: #7E3817;
+    --link-before-clr: #D7DDDD;
+    --link-after-clr: #A9ACAB;
+    --primary-background-clr: #25373B;
+    --secondary-background-clr: #547073;
+}
+
+* {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+div {
+    display: flex;
+}
+
+img {
+    height: 100vh;
+    width: auto;
+}
+
+#form-container,
+#form-header-sec,
+#form-footer-sec {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#form-header-sec {
+    margin: 40px;
+    gap: 15px;
+    color: var(--primary-text-clr);
+}
+
+#form-container {
+    background-color: var(--primary-background-clr);
+    gap: 10px;
+}
+
+#form-info-sec {
+    background-color: var(--secondary-background-clr);
+    padding: 20px;
+    margin: 20px 0;
+}
