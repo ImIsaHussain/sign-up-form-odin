@@ -1,12 +1,13 @@
 :root {
     --primary-text-clr: #FAFAFA;
-    --secondary-text-clr: #F0F3F2;
+    --secondary-text-clr: #cccccc;
     --accent-text-clr: #247f87;
-    --primary-btn-clr: #7E3817;
+    --primary-btn-clr: #7e3817;
     --link-before-clr: #D7DDDD;
     --link-after-clr: #A9ACAB;
     --primary-background-clr: #25373B;
     --secondary-background-clr: #547073;
+    --btn-border-clr: #A9ACAB;
 }
 
 * {
@@ -25,6 +26,20 @@ div {
 img {
     height: 100vh;
     width: auto;
+
+}
+
+button {
+    background-color: var(--primary-btn-clr);
+    color: var(--primary-text-clr);
+    border: 2px solid var(--btn-border-clr);
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    height: auto;
+    font-size: 18px;
+    
 }
 
 #form-container,
@@ -32,7 +47,6 @@ img {
 #form-footer-sec {
     display: flex;
     flex-direction: column;
-
 }
 
 #form-header-sec {
@@ -44,10 +58,39 @@ img {
 #form-container {
     background-color: var(--primary-background-clr);
     gap: 10px;
+    padding-top: 200px;
 }
 
 #form-info-sec {
     background-color: var(--secondary-background-clr);
     padding: 20px;
     margin: 20px 0;
+    color: var(--primary-text-clr);
+}
+
+#form-footer-sec {
+    color: var(--secondary-text-clr);
+    margin: 0 20px 20px 20px;
+    gap: 20px;
+}
+
+a {
+    color: var(--link-before-clr);
+}
+
+a:visited {
+    color: var(--link-after-clr);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+}
+
+#img-overlay {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(126, 56, 23, 0.5);
 }
