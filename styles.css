@@ -26,7 +26,19 @@ div {
 img {
     height: 100vh;
     width: auto;
+}
 
+#img-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    width: 571.758px;
+    top: 130px;
+    background-color: rgba(126, 56, 23, 0.5);
+    font-size: 24px;
 }
 
 button {
@@ -39,7 +51,7 @@ button {
     width: 200px;
     height: auto;
     font-size: 18px;
-    
+
 }
 
 #form-container,
@@ -58,10 +70,11 @@ button {
 #form-container {
     background-color: var(--primary-background-clr);
     gap: 10px;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 #form-info-sec {
+    display: flex;
     background-color: var(--secondary-background-clr);
     padding: 20px;
     margin: 20px 0;
@@ -89,8 +102,36 @@ form {
     padding: 10px;
 }
 
-#img-overlay {
-    position: absolute;
-    z-index: 1;
-    background-color: rgba(126, 56, 23, 0.5);
+.form-items {
+    display: flex;
+    gap: 5px;
+}
+
+#name-info,
+#contact-info,
+#password-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#form-info-holder {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text] {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
