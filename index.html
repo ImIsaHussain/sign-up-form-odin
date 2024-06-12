@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form | TOP</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -27,51 +27,53 @@
             </div>
 
             <div id="form-info-sec">
-                <form>
+                <form action="#" method="get">
                     <legend>
                         <h2>Not a creepy sign-up form...</h2>
                     </legend>
 
                     <div id="name-info">
                         <div class="form-element">
-                            <label for="first-name">First Name</label>
-                            <input type="text" name="first-name">
+                            <label for="first-name">* First Name</label>
+                            <input type="text" name="first-name" id="first-name">
                         </div>
                         <div class="form-element">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name">
+                            <label for="last-name">* Last Name</label>
+                            <input type="text" name="last-name" id="last-name">
                         </div>
                     </div>
 
                     <div id="contact-info">
                         <div class="form-element">
-                            <label for="email">email</label>
-                            <input type="text" name="email">
+                            <label for="email">* email</label>
+                            <input type="text" name="email" id="email">
                         </div>
                         <div class="form-element">
-                            <label for="phone-number">phone number</label>
-                            <input type="text" name="phone-number">
+                            <label for="phone-number">* Phone Number</label>
+                            <input type="text" name="phone-number" id="phone-number">
                         </div>
                     </div>
 
                     <div id="password-info">
                         <div class="form-element">
-                            <label for="password">password</label>
-                            <input type="text" name="password">
+                            <label for="password">* Password</label>
+                            <input type="text" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         </div>
                         <div class="form-element">
-                            <label for="confirm-password">confirm password</label>
-                            <input type="text" name="confirm-password">
+                            <label for="confirm-password">* Confirm Password</label>
+                            <input type="text" name="confirm-password" id="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
                         </div>
                     </div>
 
+                    <div id="form-footer-sec">
+                        <button id="create-account-btn">create an account!</button>
+                        <p>already gave me your info...? <a href="" id="return-user-btn">Log in</a></p>
+                    </div>
+                    
                 </form>
             </div>
 
-            <div id="form-footer-sec">
-                <button id="create-account-btn">create an account!</button>
-                <p>already gave me your info...? <a href="" id="return-user-btn">Log in</a></p>
-            </div>
+            
         </div>
     </div>
 
